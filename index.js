@@ -17,7 +17,7 @@ require("dotenv").config();
 const app = express();
 
 // ====== Middlewares ======
-app.use(cors()); // or customize origin if needed
+app.use(cors({origin:'*'})); // or customize origin if needed
 app.use(express.json());
 
 // ====== Mongo Connect ======
